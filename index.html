@@ -20,7 +20,7 @@
     <div class="profile-page sidebar-collapse">
       <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
         <div class="container">
-          <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">我的简历</a>
+          <div class="navbar-translate"><a class="navbar-brand lang" href="#" key="myresume" rel="tooltip"></a>
             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
               aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span
                 class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span
@@ -28,11 +28,13 @@
           </div>
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
             <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">关于</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">技能专长</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">我的作品</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">经验</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">联系</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll lang"  href="#about" key="on"></a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll lang" href="#skill" key="Talent"></a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll lang" href="#portfolio" key="Mycreation"></a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll lang" href="#experience" key="experience"></a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll lang" href="#contact" key="contact"></a></li>
+               <li class="nav-item" ><a class="nav-link smooth-scroll translate" id="en">粤语</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll translate" id="zh" >中文</a></li>
             </ul>
           </div>
         </div>
@@ -49,9 +51,10 @@
             <div class="container">
               <div class="content-center">
                 <div class="cc-profile-image"><a href="#"><img src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/images/yan.jpg" alt="Image" /></a></div>
-                <div class="h2 title">贾颜华</div>
-                <p class="category text-white">web前端开发人员</p><a class="btn btn-primary smooth-scroll mr-2"
-                  href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">联系我</a>
+                <div class="h2 title lang" key="jia"></div>
+                <p class="category text-white lang" key="web"></p>
+<!--                  <a class="btn btn-primary smooth-scroll mr-2"-->
+<!--                     href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">联系我</a>-->
               </div>
             </div>
             <div class="section">
@@ -75,32 +78,29 @@
             <div class="row">
               <div class="col-lg-6 col-md-12">
                 <div class="card-body">
-                  <div class="h4 mt-0 title">自我介绍</div>
-                  <p>你好，我是贾颜华，web前端开发人员</p>
-                  <p>
-                   本人性格开朗，有热心，工作积极，能吃苦耐劳，服从上级安排，2018年毕业于北京理工大学，毕业后，曾就职于深圳腾沐科技公司，现有二年多的工作经验，前端基础知识扎实拓展性强，掌握原生
-                    <b>js</b>,<b >html</b>,<b >css</b>,<b >vue</b>,<b
-                     >h5</b>,<b >css3</b>,了解使用<b >微信小程序开发</b>技术</p>
+                  <div class="h4 mt-0 title lang" key="selfintroduction"></div>
+                  <p class="lang" key="Hello"></p>
+                  <p  class="lang" key="cheerful" ></p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
                 <div class="card-body">
-                  <div class="h4 mt-0 title">基本信息</div>
+                  <div class="h4 mt-0 title lang" key="basicInformation"></div>
                   <div class="row">
-                    <div class="col-sm-4"><strong class="text-uppercase">年龄:</strong></div>
-                    <div class="col-sm-8">21</div>
+                    <div class="col-sm-4"><strong class="text-uppercase lang" key="age" ></strong></div>
+                    <div class="col-sm-8 lang" key="21"></div>
                   </div>
                   <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">邮箱:</strong></div>
-                    <div class="col-sm-8">2275241754@qq.com</div>
+                    <div class="col-sm-4"><strong class="text-uppercase lang" key="mailbox" ></strong></div>
+                    <div class="col-sm-8 lang" key="22"></div>
                   </div>
                   <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">电话:</strong></div>
-                    <div class="col-sm-8">13048907299</div>
+                    <div class="col-sm-4"><strong class="text-uppercase lang" key="phone"></strong></div>
+                    <div class="col-sm-8 lang" key="23"></div>
                   </div>
                   <div class="row mt-3">
-                    <div class="col-sm-4"><strong class="text-uppercase">地址:</strong></div>
-                    <div class="col-sm-8">广东省，深圳市，宝安区，固戍</div>
+                    <div class="col-sm-4"><strong class="text-uppercase lang" key="address"></strong></div>
+                    <div class="col-sm-8 lang" key="addressa"></div>
                   </div>
                   
                 </div>
@@ -111,7 +111,7 @@
       </div>
       <div class="section" id="skill">
         <div class="container">
-          <div class="h4 text-center mb-4 title">专业技能</div>
+          <div class="h4 text-center mb-4 title lang" key="professional"></div>
           <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div class="card-body">
               <div class="row">
@@ -185,7 +185,7 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="progress-container progress-primary"><span class="progress-badge">微信小程序</span>
+                  <div class="progress-container progress-primary"><span class="progress-badge lang" key="WeChat_Mini"></span>
                     <div class="progress">
                       <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
                         data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0"
@@ -222,12 +222,12 @@
           </div>
         </div>
       </div>
-      <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" title="网站模板">网站模板</a></div>
+<!--      <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" title="网站模板">网站模板</a></div>-->
       <div class="section" id="portfolio">
         <div class="container">
           <div class="row">
             <div class="col-md-6 ml-auto mr-auto">
-              <div class="h4 text-center mb-4 title">项目</div>
+              <div class="h4 text-center mb-4 title lang" key="Mycreation"></div>
               <div class="nav-align-center">
                 <ul class="nav nav-pills nav-pills-primary" role="tablist">
                   <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development"
@@ -248,8 +248,8 @@
                       <a href="#web-development">
                         <figure class="cc-effect"><img src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/images/project-1.jpg" alt="Image" />
                           <figcaption>
-                            <div class="h4">最近的项目</div>
-                            <p>海宏智慧工地管理系统</p>
+                            <div class="h4 lang" key="recentproject"></div>
+                            <p class="lang" key="hhaihongsmart"></p>
                           </figcaption>
                         </figure>
                       </a></div>
@@ -257,8 +257,8 @@
                       <a href="#web-development">
                         <figure class="cc-effect"><img src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/images/project-2.jpg" alt="Image" />
                           <figcaption>
-                            <div class="h4">超购 （移动页面）</div>
-                            <p>运用vue语法，使用Animate.css，使用Mint-UI框架</p>
+                            <div class="h4 lang" key="Overbooking"></div>
+                            <p class="lang" key="vue"></p>
                           </figcaption>
                         </figure>
                       </a></div>
@@ -268,8 +268,8 @@
                       <a href="#web-development">
                         <figure class="cc-effect"><img src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/images/project-3.jpg" alt="Image" />
                           <figcaption>
-                            <div class="h4">万家校</div>
-                            <p>运用vue语法，使用Element-UI组件，使用百度地图插件，使用vue-i18n实现中，英，粤语言切换</p>
+                            <div class="h4 lang" key="wanjiaSchool"></div>
+                            <p class="lang" key="Switch"></p>
                           </figcaption>
                         </figure>
                       </a></div>
@@ -277,8 +277,8 @@
                       <a href="#web-development">
                         <figure class="cc-effect"><img src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/images/project-4.jpg" alt="Image" />
                           <figcaption>
-                            <div class="h4">值得买 (pc)</div>
-                            <p>运用vue语法，使用Element-UI组件，使用Mint-UI框架</p>
+                            <div class="h4 lang" key="worthtobuy"></div>
+                            <p class="lang" key="vues1"></p>
                           </figcaption>
                         </figure>
                       </a></div>
@@ -294,8 +294,8 @@
                       <a href="#Photography">
                         <figure class="cc-effect"><img src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/images/photography-1.jpg" alt="Image" />
                           <figcaption>
-                            <div class="h4">遨游 （PC）</div>
-                            <p>使用jq语法，使用阿里图标库，使用日历插件，使用ajax</p>
+                            <div class="h4 lang" key="travel"></div>
+                            <p class="lang" key="jq"></p>
                           </figcaption>
                         </figure>
                       </a></div>
@@ -303,10 +303,8 @@
                       <a href="#Photography">
                         <figure class="cc-effect"><img src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/images/photography-3.jpg" alt="Image" />
                           <figcaption>
-                            <div class="h4">
-                              爱情
-                            </div>
-                            <p>幸福的美好</p>
+                            <div class="h4 lang" key="love"></div>
+                            <p class="lang" key="happybeauty"></p>
                           </figcaption>
                         </figure>
                       </a></div>
@@ -316,8 +314,8 @@
                       <a href="#Photography">
                         <figure class="cc-effect"><img src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/images/photography-2.jpg" alt="Image" />
                           <figcaption>
-                            <div class="h4">深蓝</div>
-                            <p>自由的美好</p>
+                            <div class="h4 lang" key="navy"></div>
+                            <p class="lang" key="Free"></p>
                           </figcaption>
                         </figure>
                       </a></div>
@@ -325,8 +323,8 @@
                       <a href="#Photography">
                         <figure class="cc-effect"><img src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/images/photography-4.jpg" alt="Image" />
                           <figcaption>
-                            <div class="h4">血性</div>
-                            <p>不顾前方</p>
+                            <div class="h4 lang" key="Bloody"></div>
+                            <p class="lang" key="Ignore"></p>
                           </figcaption>
                         </figure>
                       </a></div>
@@ -339,47 +337,26 @@
       </div>
       <div class="section" id="experience">
         <div class="container cc-experience">
-          <div class="h4 text-center mb-4 title">工作经验</div>
+          <div class="h4 text-center mb-4 title lang" key="workexperience"></div>
           <div class="card">
             <div class="row">
               <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-experience-header">
-                  <p>2019年6月-至今</p>
-                  <div class="h5">深圳泰首智能科技</div>
-                  <div class="h5">海宏工地管理系统（已上线）和万家校（已上线）</div>
+                  <p class="lang" key="todate"></p>
+                  <div class="h5 lang" key="Taishou"></div>
+                  <div class="h5 lang" key="Online"></div>
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
-                  <div class="h5">web前端开发人员</div>
-                  <p>
-                    项目描述
-                  </p>
-                  <p>
-                    海宏工地管理系统主要配合公司研发的人脸识别数据，负责澳门，香港，工地员工进出，分配，时间，报表，地盘，考勤，负责参与万家校新功能的开发和bug的维护，负责参与ai生活小程序新功能的开发和bug的维护
-                  </p>
-                  <p>
-                    项目链接
-                  </p>
-                  <p>
-                    海宏工地管理系统： http://www.peopledars.com
-                  </p>
-                  <p>
-                     万家校管理系统：   http://www.chinaanno.cn
-                  </p>
-                  <p>
-                    使用技术
-                  </p>
-                  <p>
-                    全部负责pc海宏工地管理系统。
-                    1. 搭建vue项目环境。
-                    2. 封装Vue可复用组件，最大限度实现代码简洁与优化。
-                    3. 利用vue-router路由功能实现 机构，考勤，平台，员工，报表等功能的切换。
-                    5. 利用axios实现与服务器交互和数据请求。
-                    7. 引入Element 框架，使用其中的TimePicker组件实现各个员工时间和考勤，使用了form表单组件实现了各个报表页面，使用了table组件实现了考勤记录页面和功能。
-                    8. 使用了vue-i18n实习了多语言切换。
-                    9. 负责参与小程序的新功能实现 表单，上传，导航等功能。
-                  </p>
+                  <div class="h5 lang" key="web"></div>
+                  <p class="lang" key="description"></p>
+                  <p class="lang" key="BUGmaintenance"></p>
+                  <p class="lang" key="Projectlink"></p>
+                  <p class="lang" key="www"></p>
+                  <p class="lang" key="wwws"></p>
+                  <p class="lang" key="Usetechnology"></p>
+                  <p class="lang" key="Allresponsible"></p>
                 </div>
               </div>
             </div>
@@ -388,33 +365,18 @@
             <div class="row">
               <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-experience-header">
-                  <p>2018年11月-2019年4月</p>
-                  <div class="h5">深圳市腾沐有限公司</div>
-                  <div class="h5"> 超购 （移动页面）</div>
+                  <p class="lang" key="todate1"></p>
+                  <div class="h5 lang" key="Tengmu"></div>
+                  <div class="h5 lang" key="Overbooking"></div>
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
-                  <div class="h5">web前端开发人员</div>                 
-                  <p>
-                    项目描述
-                  </p>
-                  <p>
-                    超购是一款集购物、生活服务等电商APP, 主要功能有精选、发现、分类、购物车、我的等。主要负责精选页面和分类页面相关功能的实现
-                  </p>
-                  <p>
-                    使用技术
-                  </p>
-                  <p>
-                    1. 搭建vue项目环境。
-                    2. 封装Vue可复用组件，最大限度实现代码简洁与优化。
-                    3. 利用vue-router路由功能实现单页面应用，首页、分类、购物车、我的等功能的切换。
-                    4. 运用vuex实现组件间的互相通信及数据共享。
-                    5. 利用axios实现与服务器交互和数据请求。
-                    6. 使用Animate.css实现动画效果。
-                    7. 引入Mint-UI框架，使用其中的swipe组件实现首页轮播图，并完成页面的基本布局和式样。
-                    8. 使用flexible布局，适应不同终端。
-                  </p>
+                  <div class="h5 lang" key="web"></div>
+                  <p class="lang" key="description"></p>
+                  <p class="lang" key="Overbooking1"></p>
+                  <p class="lang" key="Usetechnology"></p>
+                  <p class="lang" key="flexible"></p>
                 </div>
               </div>
             </div>
@@ -423,33 +385,18 @@
             <div class="row">
               <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-experience-header">
-                  <p>2018年7月-2018年11月</p>
-                  <div class="h5">深圳市腾沐有限公司</div>
-                  <div class="h5">（值得买 pc）</div>
+                  <p class="lang" key="todate2"></p>
+                  <div class="h5 lang" key="Tengmu"></div>
+                  <div class="h5 lang" key="worthtobuy"></div>
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
-                  <div class="h5">web前端开发人员</div>
-                  <p>
-                    项目描述
-                  </p>
-                  <p>
-                    
-                    什么值得买是一个中立的，致力于帮助广大网友买到更有性价比网购产品的推荐网站。主要负责好价区里面的各个模块
-                  </p>
-                  <p>
-                    使用技术
-                  </p>
-                  <p>
-                    1. 搭建vue项目环境。
-                    2. 封装Vue可复用组件，最大限度实现代码简洁与优化。
-                    3. 利用vue-router路由功能实现精选价、白菜价、优惠券、全部好劵等功能的切换。
-                    4. 运用vuex实现组件间的互相通信及数据共享。
-                    5. 利用axios实现与服务器交互和数据请求。
-                    6. 使用Element-ui实现动画效果。
-                    7. 使用webpack实现最后的打包并且提交
-                  </p>
+                  <div class="h5 lang" key="web"></div>
+                  <p class="lang" key="description"></p>
+                  <p class="lang" key="Whatisworthbuying"></p>
+                  <p class="lang" key="Usetechnology"></p>
+                  <p class="lang" key="webpack"></p>
                 </div>
               </div>
             </div>
@@ -458,35 +405,18 @@
             <div class="row">
               <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-experience-header">
-                  <p>2017年11月-2018年5月</p>
-                  <div class="h5">深圳市腾沐有限公司</div>
-                  <div class="h5"> 遨游 （pc）</div>
+                  <p class="lang" key="todate3"></p>
+                  <div class="h5 lang" key="Tengmu"></div>
+                  <div class="h5 lang" key="travel"></div>
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
-                  <div class="h5">web前端开发人员</div>                 
-                  <p>
-                    项目描述
-                  </p>
-                  <p>
-                    遨游网项目是一个为消费者提供国内国外旅游的产品预定服务。主要实现目标：首页、旅行、登录注册页面
-                  </p>
-                  <p>
-                    使用技术
-                  </p>
-                  <p>
-                    1．使用div+css并结合Javascript负责产品的前端开发和页面制作。
-                    2．使用浮动、定位进行网页模块化。
-                    3． CSS3结合 jQuery 中动画效果进行的页面交互。
-                    4. 运用了精灵图和阿里字体图库iconfont 资源完成图标样式。
-                    5．用了评分组件，实现了星星等级评分的功能。
-                    6．利用ajax技术向后台请求数据，实现前后台数据交互。
-                    7．使用正则表达式实现对注册页面的登录验证。
-                    8．使用my97日历插件实现出发日期和返回日期的展示。
-                    9．使用选项卡效果实现各城市之间的切换。
-                    10．使用localStorage实现用户登录状态判断，存储用户登录信息，及地址信息等。
-                  </p>
+                  <div class="h5 lang" key="web"></div>
+                  <p class="lang" key="description"></p>
+                  <p class="lang" key="Surfonline"></p>
+                  <p class="lang" key="Usetechnology"></p>
+                  <p class="lang" key="localStorages"></p>
                 </div>
               </div>
             </div>
@@ -495,19 +425,19 @@
       </div>
       <div class="section">
         <div class="container cc-education">
-          <div class="h4 text-center mb-4 title">我的教育</div>
+          <div class="h4 text-center mb-4 title lang" key="Myeducation"></div>
           <div class="card">
             <div class="row">
               <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-education-header">
                   <p>2015 - 2018</p>
-                  <div class="h5">大专</div>
+                  <div class="h5 lang" key="College"></div>
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
-                  <p class="category">北京理工大学</p>
-                  <p>　北京理工大学1940年诞生于延安，是中国共产党创办的第一所理工科大学，是新中国成立以来国家历批次重点建设的高校，首批进入国家“211工程”和“985工程”，首批进入“世界一流大学”建设高校A类行列。毛泽东同志亲自题写校名，李富春、徐特立、李强等老一辈无产阶级革命家先后担任学校主要领导。学校现隶属于工业和信息化部，全体师生员工正对标国家“两个一百年”奋斗目标，全力朝着中国特色世界一流大学的建设目标迈进。</p>
+                  <p class="category lang" key="Technology"></p>
+                  <p class="lang" key="Introduction"></p>
                 </div>
               </div>
             </div>
@@ -517,7 +447,7 @@
       </div>
       <div class="section" id="reference">
         <div class="container cc-reference">
-          <div class="h4 mb-4 text-center title">我的偶像</div>
+          <div class="h4 mb-4 text-center title lang" key="myidol"></div>
           <div class="card" data-aos="zoom-in">
             <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -530,12 +460,11 @@
                   <div class="row">
                     <div class="col-lg-2 col-md-3 cc-reference-header"><img src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/images/you.jpg"
                         alt="Image" />
-                      <div class="h5 pt-2">尤雨溪</div>
-                      <p class="category">作者 / 大神</p>
+                      <div class="h5 pt-2 lang" key="You_Yuxi"></div>
+                      <p class="category lang" key="Author"></p>
                     </div>
                     <div class="col-lg-10 col-md-9">
-                      <p> 尤雨溪毕业于上海复旦附中，在美国完成大学学业，本科毕业于Colgate University，后在Parsons设计学院获得Design & Technology艺术硕士学位，现任职于纽约Google Creative Lab。 [1] 
-                        2014年2月，开发了一个前端开发库Vue.js。Vue.js 是构建 Web 界面的 JavaScript 库，是一个通过简洁的API提供高效的数据绑定和灵活的组件系统</p>
+                      <p class="lang" key="graduation"></p>
                     </div>
                   </div>
                 </div>
@@ -543,11 +472,11 @@
                   <div class="row">
                     <div class="col-lg-2 col-md-3 cc-reference-header"><img src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/images/yun.jpg"
                         alt="Image" />
-                      <div class="h5 pt-2">马云</div>
-                      <p class="category">马爸爸/ 杰克马</p>
+                      <div class="h5 pt-2 lang" key="Ma_Yun"></div>
+                      <p class="category lang" key="Dad_horse"></p>
                     </div>
                     <div class="col-lg-10 col-md-9">
-                      <p> 马云1988年毕业于杭州师范学院外语系，同年担任杭州电子工业学院英文及国际贸易教师，1995年创办中国第一家互联网商业信息发布网站“中国黄页”，1998年出任中国国际电子商务中心国富通信息技术发展有限公司总经理，1999年创办阿里巴巴，并担任阿里集团CEO、董事局主席。</p>
+                      <p class="lang" key="Ma_Yuns"></p>
                     </div>
                   </div>
                 </div>
@@ -555,11 +484,11 @@
                   <div class="row">
                     <div class="col-lg-2 col-md-3 cc-reference-header"><img src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/images/mow.jpg"
                         alt="Image" />
-                      <div class="h5 pt-2">电竞李相赫</div>
-                      <p class="category">大魔王 / 李瓜皮</p>
+                      <div class="h5 pt-2 lang" key="E-sports"></div>
+                      <p class="category lang" key="Demon_King"></p>
                     </div>
                     <div class="col-lg-10 col-md-9">
-                      <p> 1996年5月7日，李相赫出生于韩国的一个普通单亲家庭。单亲家庭给他的只有孤独和自卑，就连简单的微笑在他生活里都显得那么的珍贵。而从小到大孤僻的他只靠玩游戏来打磨自己的时间，S2时期他以2500+分登顶韩服路人王。很快，作为韩服路人王faker被skt战队看上，并成为韩国电竞界的一面旗帜。</p>
+                      <p class="lang" key="lis"></p>
                     </div>
                   </div>
                 </div>
@@ -575,30 +504,30 @@
               <div class="row">
                 <div class="col-md-9">
                   <div class="card mb-0" data-aos="zoom-in">
-                    <div class="h4 text-center title">联系我</div>
+                    <div class="h4 text-center title lang" key="contact"></div>
                     <div class="row">
                       <div class="col-md-6">
                         <div class="card-body">
-                          <p class="mb-0"><strong>爱好兴趣 </strong></p>
-                          <p class="pb-2">LOL，研究新的技术，摄影</p>
-                          <p class="mb-0"><strong>QQ</strong></p>
+                          <p class="mb-0"><strong class="lang" key="Hobby"> </strong></p>
+                          <p class="pb-2 lang" key="lol"></p>
+                          <p class="mb-0"><strong >QQ</strong></p>
                           <p class="pb-2">2275241754</p>
-                          <p class="mb-0"><strong>微信</strong></p>
-                          <p>jia2275241754</p>
-                          <p class="mb-0"><strong>期望薪资</strong></p>
-                          <p>面谈</p>
+                          <p class="mb-0"><strong class="lang" key="WeChat"></strong></p>
+                          <p>JoveY_0816</p>
+                          <p class="mb-0"><strong class="lang" key="expected_salary"></strong></p>
+                          <p class="lang" key="Interview"></p>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="card-body">
-                          <p class="mb-0"><strong>地址 </strong></p>
-                          <p class="pb-2">广东省，深圳市，宝安区，固戍</p>
-                          <p class="mb-0"><strong>手机</strong></p>
+                          <p class="mb-0"><strong class="lang" key="addressb"> </strong></p>
+                          <p class="pb-2 lang" key="Province"></p>
+                          <p class="mb-0"><strong class="lang" key="phone"></strong></p>
                           <p class="pb-2">13048907299</p>
-                          <p class="mb-0"><strong>邮箱</strong></p>
+                          <p class="mb-0"><strong class="lang" key="mailbox"></strong></p>
                           <p>2275241754@qq.com</p>
-                          <p class="mb-0"><strong>工作状态</strong></p>
-                          <p>在职（考虑新的工作机会）</p>
+                          <p class="mb-0"><strong class="lang" key="Working_state"></strong></p>
+                          <p class="lang" key="service"></p>
                         </div>
                       </div>
                     </div>
@@ -612,12 +541,12 @@
     </div>
   </div>
   <footer class="footer">
-    <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x "
-          aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x "
-          aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x"
-          aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x "
-          aria-hidden="true"></i></a></div>
-    <div class="h4 title text-center">贾颜华</div>
+<!--    <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x "-->
+<!--          aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x "-->
+<!--          aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x"-->
+<!--          aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x "-->
+<!--          aria-hidden="true"></i></a></div>-->
+    <div class="h4 title text-center lang" key="jia"></div>
   </footer>
   <script src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/js/core/jquery.3.2.1.min.js"></script>
   <script src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/js/core/popper.min.js"></script>
@@ -625,6 +554,272 @@
   <script src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/js/now-ui-kit.js?v=1.1.0"></script>
   <script src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/js/aos.js"></script>
   <script src="https://pk-1257738183.cos.ap-guangzhou.myqcloud.com/jiayanhua/scripts/main.js"></script>
+
+  <script>
+
+    var arrLang = {
+      "en": {
+        "myresume": "我的簡歷",
+        "on": "關於",
+        "Talent": "技能專長",
+        "Mycreation": "我的項目",
+        "experience": "經驗",
+        "contact": "聯繫我",
+        "jia": "賈顏華",
+        "web": "web前端開發人員",
+        "selfintroduction": "自我介紹",
+        "Hello": "你好，我是賈顏華，web前端開發人員",
+        "cheerful": "本人性格開朗，有熱心，工作積極，能吃苦耐勞，服從上級安排，2018年畢業於北京理工大學，畢業後，曾就職於深圳騰沐科技公司，現有二年多的工作經驗，前端基礎知識紮實拓展性強，掌握原生" +
+                "JavaScript,html,css,Vue,html5,css3,ELEMENT-UI,了解使用React,微信小程序開發技術",
+        "basicInformation": "基本信息",
+        "age": "年齡：",
+        "mailbox": "邮箱:",
+        "phone": "電話:",
+        "address": "地址:",
+        "21": "21",
+        "22": "2275241754@qq.com",
+        "23": "13048907299",
+        "addressa": "廣東省，深圳市，寶安區，固戍",
+        "professional": "專業技能",
+        "recentproject": "最近的項目",
+        "hhaihongsmart": "海宏智慧工地管理系統",
+        "Overbooking": "超購（移動頁面）",
+        "vue": "運用vue語法，使用Animate.css，使用Mint-UI框架",
+        "wanjiaSchool": "萬家校",
+        "Switch": "運用vue語法，使用Element-UI組件，使用百度地圖插件，使用vue-i18n實現中，英，粵語言切換",
+        "worthtobuy": "值得買(pc)",
+        "vues1": "運用vue語法，使用Element-UI組件，使用Mint-UI框架",
+        "travel": "遨遊（PC）",
+        "jq": "使用jq語法，使用阿里圖標庫，使用日曆插件，使用ajax",
+        "love": "愛情",
+        "happybeauty": "幸福的美好",
+        "navy":"深藍",
+        "Free":"自由的美好",
+        "Bloody":"血性",
+        "Ignore":"不顧前方",
+        "workexperience":"工作經驗",
+        "todate":"2019年6月-至今",
+        "Taishou ":"深圳泰首智能科技",
+        "Online":"海宏工地管理系統（已上線）和萬家校（已上線）",
+        "description":"項目描述",
+        "BUGmaintenance":"海宏工地管理系統主要配合公司研發的人臉識別數據，負責澳門，香港，工地員工進出，分配，時間，報表，地盤，考勤，負責參與萬家校新功能的開發和bug的維護，負責參與ai生活小程序新功能的開發和bug的維護",
+        "www":"海宏工地管理系統： http://www.peopledars.com",
+        "wwws":" 萬家校管理系統： http://wsc.10000ss.cn",
+        "Usetechnology":"使用技術",
+        "Allresponsible":" 全部負責pc海宏工地管理系統。\n" +
+                "          1. 搭建vue項目環境。\n" +
+                "          2. 封裝Vue可複用組件，最大限度實現代碼簡潔與優化。\n" +
+                "          3. 利用vue-router路由功能實現 機構，考勤，平台，員工，報表等功能的切換。\n" +
+                "          5. 利用axios實現與服務器交互和數據請求。\n" +
+                "          7. 引入Element 框架，使用其中的TimePicker組件實現各個員工時間和考勤，使用了form表單組件實現了各個報表頁面，使用了table組件實現了考勤記錄頁面和功能。\n" +
+                "          8. 使用了vue-i18n實習了多語言切換。\n" +
+                "          9. 負責參與小程序的新功能實現 表單，上傳，導航等功能。",
+        "todate1":"2018年11月-2019年4月",
+        "Tengmu":"深圳市騰沐有限公司",
+        "Overbooking1":"超購是一款集購物、生活服務等電商APP, 主要功能有精選、發現、分類、購物車、我的等。主要負責精選頁面和分類頁面相關功能的實現",
+        "flexible":" 1. 搭建vue項目環境。\n" +
+                     " 2. 封裝Vue可複用組件，最大限度實現代碼簡潔與優化。\n" +
+                   " 3. 利用vue-router路由功能實現單頁面應用，首頁、分類、購物車、我的等功能的切換。\n" +
+                   " 4. 運用vuex實現組件間的互相通信及數據共享。\n" +
+                  " 5. 利用axios實現與服務器交互和數據請求。\n" +
+                   " 6. 使用Animate.css實現動畫效果。\n" +
+                   " 7. 引入Mint-UI框架，使用其中的swipe組件實現首頁輪播圖，並完成頁面的基本佈局和式樣。\n" +
+                   " 8. 使用flexible佈局，適應不同終端。",
+        "todate2":"2018年7月-2018年11月",
+        "Whatisworthbuying":"什麼值得買是一個中立的，致力於幫助廣大網友買到更有性價比網購產品的推薦網站。主要負責好價區裡面的各個模塊",
+        "webpack":" 1. 搭建vue項目環境。\n" +
+                   " 2. 封裝Vue可複用組件，最大限度實現代碼簡潔與優化。\n" +
+                   " 3. 利用vue-router路由功能實現精選價、白菜價、優惠券、全部好劵等功能的切換。\n" +
+                   " 4. 運用vuex實現組件間的互相通信及數據共享。\n" +
+                  " 5. 利用axios實現與服務器交互和數據請求。\n" +
+                  " 6. 使用Element-ui實現動畫效果。\n" +
+                  " 7. 使用webpack實現最後的打包並且提交",
+        "todate3":"2017年11月-2018年5月",
+        "Surfonline":"遨遊網項目是一個為消費者提供國內國外旅遊的產品預定服務。主要實現目標：首頁、旅行、登錄註冊頁面",
+        "localStorages":"1．使用div+css並結合Javascript負責產品的前端開發和頁面製作。\n" +
+                " 2．使用浮動、定位進行網頁模塊化。\n" +
+                " 3． CSS3結合 jQuery 中動畫效果進行的頁面交互。\n" +
+                " 4. 運用了精靈圖和阿里字體圖庫iconfont 資源完成圖標樣式。\n" +
+                " 5．用了評分組件，實現了星星等級評分的功能。\n" +
+                " 6．利用ajax技術向後台請求數據，實現前後台數據交互。\n" +
+                " 7．使用正則表達式實現對註冊頁面的登錄驗證。\n" +
+                " 8．使用my97日曆插件實現出發日期和返回日期的展示。\n" +
+                " 9．使用選項卡效果實現各城市之間的切換。\n" +
+                " 10．使用localStorage實現用戶登錄狀態判斷，存儲用戶登錄信息，及地址信息等。",
+        "Myeducation":"我的教育",
+        "College":"大專",
+        "Technology":"北京理工大学",
+        "Introduction":"北京理工大學1940年誕生於延安，是中國共產黨創辦的第一所理工科大學，是新中國成立以來國家歷批次重點建設的高校，首批進入國家“211工程”和“ 985工程”，首批進入“世界一流大學”建設高校A類行列。毛澤東同志親自題寫校名，李富春、徐特立、李強等老一輩無產階級革命家先後擔任學校主要領導。學校現隸屬於工業和信息化部，全體師生員工正對標國家“兩個一百年”奮鬥目標，全力朝著中國特色世界一流大學的建設目標邁進。",
+        "myidol":"我的偶像",
+        "You_Yuxi":"尤雨溪",
+        "Author":"作者 / 大神",
+        "graduation":" 尤雨溪畢業於上海復旦附中，在美國完成大學學業，本科畢業於Colgate University，後在Parsons設計學院獲得Design & Technology藝術碩士學位，現任職於紐約Google Creative Lab。 [1] \n" +
+                " 2014年2月，開發了一個前端開發庫Vue.js。Vue.js 是構建 Web 界面的 JavaScript 庫，是一個通過簡潔的API提供高效的數據綁定和靈活的組件系統",
+        "Ma_Yun":"馬雲",
+        "Dad_horse":"馬爸爸/ 傑克馬",
+        "Ma_Yuns":" 馬雲1988年畢業於杭州師範學院外語系，同年擔任杭州電子工業學院英文及國際貿易教師，1995年創辦中國第一家互聯網商業信息發佈網站“中國黃頁”，1998年出任中國國際電子商務中心國富通信息技術發展有限公司總經理，1999年創辦阿里巴巴，並擔任阿里集團CEO、董事局主席。",
+        "E-sports":"電競李相赫",
+        "Demon_King":"大魔王 / 李瓜皮",
+        "lis":"1996年5月7日，李相赫出生於韓國的一個普通單親家庭。單親家庭給他的只有孤獨和自卑，就連簡單的微笑在他生活裡都顯得那麼的珍貴。而從小到大孤僻的他只靠玩遊戲來打磨自己的時間，S2時期他以2500+分登頂韓服路人王。很快，作為韓服路人王faker被skt戰隊看上，並成為韓國電競界的一面旗幟。",
+        "Hobby":"愛好興趣",
+        "lol":"LOL，研究新的技術，攝影",
+        "WeChat":"微信",
+        "expected_salary":"期望薪資",
+        "Interview":"面談",
+        "addressb":"地址",
+        "Province":"廣東省，深圳市，寶安區，固戍",
+        "Working_state":"工作狀態",
+        "service":"在職（考慮新的工作機會）",
+        "WeChat_Mini":"微信小程序",
+      },
+      "zh": {
+        "myresume": "我的简历",
+        "on": "关于",
+        "Talent": "技能专长",
+        "Mycreation": "我的项目",
+        "experience": "经验",
+        "contact": "联系我",
+        "jia": "贾颜华",
+        "web": "web前端开发人员",
+        "selfintroduction": "自我介绍",
+        "Hello": "你好，我是贾颜华，web前端开发人员",
+        "cheerful": "本人性格开朗，有热心，工作积极，能吃苦耐劳，服从上级安排，2018年毕业于北京理工大学，毕业后，曾就职于深圳腾沐科技公司，现有二年多的工作经验，前端基础知识扎实拓展性强，掌握原生"+
+                "JavaScript,html,css,Vue,html5,css3,ELEMENT-UI,了解使用React,微信小程序开发技术",
+        "basicInformation": "基本信息",
+        "age": "年龄：",
+        "mailbox": "邮箱:",
+        "phone": "电话:",
+        "address": "地址：",
+        "21": "21",
+        "22": "2275241754@qq.com",
+        "23": "13048907299",
+        "addressa": "广东省，深圳市，宝安区，固戍",
+        "professional": "专业技能",
+        "recentproject": "最近的项目",
+        "hhaihongsmart": "海宏智慧工地管理系统",
+        "Overbooking": "超购（移动页面）",
+        "vue": "运用vue语法，使用Animate.css，使用Mint-UI框架",
+        "wanjiaSchool": "万家校",
+        "Switch": "运用vue语法，使用Element-UI组件，使用百度地图插件，使用vue-i18n实现中，英，粤语言切换",
+        "worthtobuy": "值得买(pc)",
+        "vues1": "运用vue语法，使用Element-UI组件，使用Mint-UI框架",
+        "travel": "遨游（PC）",
+        "jq": "使用jq语法，使用阿里图标库，使用日历插件，使用ajax",
+        "love": "爱情",
+        "happybeauty": "幸福的美好",
+         "navy":"深蓝",
+        "Free":"自由的美好",
+        "Bloody":"血性",
+        "Ignore":"不顾前方",
+        "workexperience":"工作经验",
+        "todate":"2019年6月-至今",
+        "Taishou ":"深圳泰首智能科技",
+        "Online":"海宏工地管理系统（已上线）和万家校（已上线）",
+        "description":"项目描述",
+        "BUGmaintenance":"海宏工地管理系统主要配合公司研发的人脸识别数据，负责澳门，香港，工地员工进出，分配，时间，报表，地盘，考勤，负责参与万家校新功能的开发和bug的维护，负责参与ai生活小程序新功能的开发和bug的维护",
+        "Projectlink":"项目链接",
+        "www":"海宏工地管理系统： http://www.peopledars.com",
+        "wwws":" 万家校管理系统： http://wsc.10000ss.cn",
+        "Usetechnology":"使用技术",
+        "Allresponsible":"  全部负责pc海宏工地管理系统。\n" +
+                "           1. 搭建vue项目环境。\n" +
+                "           2. 封装Vue可复用组件，最大限度实现代码简洁与优化。\n" +
+                "           3. 利用vue-router路由功能实现 机构，考勤，平台，员工，报表等功能的切换。\n" +
+                "           5. 利用axios实现与服务器交互和数据请求。\n" +
+                "           7. 引入Element 框架，使用其中的TimePicker组件实现各个员工时间和考勤，使用了form表单组件实现了各个报表页面，使用了table组件实现了考勤记录页面和功能。\n" +
+                "           8. 使用了vue-i18n实习了多语言切换。\n" +
+                "           9. 负责参与小程序的新功能实现 表单，上传，导航等功能。",
+        "todate1":"2018年11月-2019年4月",
+        "Tengmu":"深圳市腾沐有限公司",
+        "Overbooking1":"超购是一款集购物、生活服务等电商APP, 主要功能有精选、发现、分类、购物车、我的等。主要负责精选页面和分类页面相关功能的实现",
+         "flexible":"     1. 搭建vue项目环境。\n" +
+                "            2. 封装Vue可复用组件，最大限度实现代码简洁与优化。\n" +
+                "            3. 利用vue-router路由功能实现单页面应用，首页、分类、购物车、我的等功能的切换。\n" +
+                "            4. 运用vuex实现组件间的互相通信及数据共享。\n" +
+                "            5. 利用axios实现与服务器交互和数据请求。\n" +
+                "            6. 使用Animate.css实现动画效果。\n" +
+                "            7. 引入Mint-UI框架，使用其中的swipe组件实现首页轮播图，并完成页面的基本布局和式样。\n" +
+                "            8. 使用flexible布局，适应不同终端。",
+        "todate2":"2018年7月-2018年11月",
+        "Whatisworthbuying":"什么值得买是一个中立的，致力于帮助广大网友买到更有性价比网购产品的推荐网站。主要负责好价区里面的各个模块",
+        "webpack":"         1. 搭建vue项目环境。\n" +
+                "           2. 封装Vue可复用组件，最大限度实现代码简洁与优化。\n" +
+                "           3. 利用vue-router路由功能实现精选价、白菜价、优惠券、全部好劵等功能的切换。\n" +
+                "           4. 运用vuex实现组件间的互相通信及数据共享。\n" +
+                "           5. 利用axios实现与服务器交互和数据请求。\n" +
+                "           6. 使用Element-ui实现动画效果。\n" +
+                "           7. 使用webpack实现最后的打包并且提交",
+         "todate3":"2017年11月-2018年5月",
+        "Surfonline":"遨游网项目是一个为消费者提供国内国外旅游的产品预定服务。主要实现目标：首页、旅行、登录注册页面",
+        "localStorages":"1．使用div+css并结合Javascript负责产品的前端开发和页面制作。\n" +
+                "       2．使用浮动、定位进行网页模块化。\n" +
+                "       3． CSS3结合 jQuery 中动画效果进行的页面交互。\n" +
+                "       4. 运用了精灵图和阿里字体图库iconfont 资源完成图标样式。\n" +
+                "       5．用了评分组件，实现了星星等级评分的功能。\n" +
+                "       6．利用ajax技术向后台请求数据，实现前后台数据交互。\n" +
+                "       7．使用正则表达式实现对注册页面的登录验证。\n" +
+                "       8．使用my97日历插件实现出发日期和返回日期的展示。\n" +
+                "       9．使用选项卡效果实现各城市之间的切换。\n" +
+                "       10．使用localStorage实现用户登录状态判断，存储用户登录信息，及地址信息等。",
+        "Myeducation":"我的教育",
+        "College":"大专",
+        "Technology":"北京理工大学",
+        "Introduction":"北京理工大学1940年诞生于延安，是中国共产党创办的第一所理工科大学，是新中国成立以来国家历批次重点建设的高校，首批进入国家“211工程”和“985工程”，首批进入“世界一流大学”建设高校A类行列。毛泽东同志亲自题写校名，李富春、徐特立、李强等老一辈无产阶级革命家先后担任学校主要领导。学校现隶属于工业和信息化部，全体师生员工正对标国家“两个一百年”奋斗目标，全力朝着中国特色世界一流大学的建设目标迈进。",
+        "myidol":"我的偶像",
+        "You_Yuxi":"尤雨溪",
+        "Author":"作者 / 大神",
+        "graduation":" 尤雨溪毕业于上海复旦附中，在美国完成大学学业，本科毕业于Colgate University，后在Parsons设计学院获得Design & Technology艺术硕士学位，现任职于纽约Google Creative Lab。 [1]\n" +
+                "                        2014年2月，开发了一个前端开发库Vue.js。Vue.js 是构建 Web 界面的 JavaScript 库，是一个通过简洁的API提供高效的数据绑定和灵活的组件系统",
+        "Ma_Yun":"马云",
+        "Dad_horse":"马爸爸/ 杰克马",
+        "Ma_Yuns":" 马云1988年毕业于杭州师范学院外语系，同年担任杭州电子工业学院英文及国际贸易教师，1995年创办中国第一家互联网商业信息发布网站“中国黄页”，1998年出任中国国际电子商务中心国富通信息技术发展有限公司总经理，1999年创办阿里巴巴，并担任阿里集团CEO、董事局主席。",
+        "E-sports":"电竞李相赫",
+        "Demon_King":"大魔王 / 李瓜皮",
+        "lis":"1996年5月7日，李相赫出生于韩国的一个普通单亲家庭。单亲家庭给他的只有孤独和自卑，就连简单的微笑在他生活里都显得那么的珍贵。而从小到大孤僻的他只靠玩游戏来打磨自己的时间，S2时期他以2500+分登顶韩服路人王。很快，作为韩服路人王faker被skt战队看上，并成为韩国电竞界的一面旗帜。",
+        "Hobby":"爱好兴趣",
+        "lol":"LOL，研究新的技术，摄影",
+        "WeChat":"微信",
+        "expected_salary":"期望薪资",
+        "Interview":"面谈",
+        "addressb":"地址",
+        "Province":"广东省，深圳市，宝安区，固戍",
+        "Working_state":"工作状态",
+        "service":"在职（考虑新的工作机会）",
+         "WeChat_Mini":"微信小程序",
+      }
+    };
+
+    // The default language is English
+    var lang = "en";
+    // Check for localStorage support
+    if('localStorage' in window){
+      var lang = localStorage.getItem('lang') || navigator.language.slice(0, 2);
+      if (!Object.keys(arrLang).includes(lang)) lang = 'en';
+    }
+
+    $(document).ready(function() {
+      $(".lang").each(function(index, element) {
+        $(this).text(arrLang[lang][$(this).attr("key")]);
+      });
+    });
+
+    // get/set the selected language
+    $(".translate").click(function() {
+      var lang = $(this).attr("id");
+
+      // update localStorage key
+      if('localStorage' in window){
+        localStorage.setItem('lang', lang);
+        console.log( localStorage.getItem('lang') );
+      }
+
+      $(".lang").each(function(index, element) {
+        $(this).text(arrLang[lang][$(this).attr("key")]);
+      });
+    });
+
+
+  </script>
 </body>
 
 </html>
